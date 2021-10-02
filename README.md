@@ -10,6 +10,9 @@
 讀取檔案完成後，先根據檔案內容的第一個元素來判斷欲採用何種方法。
 
 方法一，將N個數目字直接進行Bubble Sort，並顯示CPU執行之時間。
+
 方法二，將N個數目字切成k份，由k個threads分別進行Bubble Sort後，再由k-1個threads進行Merge Sort，並顯示CPU執行之時間。
+
 方法三，將N個數目字切成k份，並由k個Processes分別進行Bubble Sort之後，再由k-1個Processes進行Merge Sort，並顯示CPU執行之時間。
+
 方法四，將N個數目字切成k份，在一個Process內對k份資料進行Bubble Sort，再用同一個Process作Merge Sort，同時顯示CPU執行之時間。
